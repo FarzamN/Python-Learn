@@ -9,7 +9,7 @@
 # print(joke)
 # print(5005+ 500)
 
-# InputNumberOne = int(input("Enter number 1: "))
+# InputNumberOne = int (input("Enter number 1: "))
 # InputNumberTwo = int(input("Enter number 2: "))
 
 # print(f"checking if a is greater then b, {InputNumberOne > InputNumberTwo}")
@@ -25,4 +25,15 @@
 
 # sentence = "hello world\n \tThis is python practice section"
 # print(sentence)
+
+# checkEnd = "Farzam"
+
+# print(checkEnd.upper())
+
+listOne = ["Farzam", 2.22, "Ali", False, "Hamza", 3.333, "Taha"]
+listOne.pop(2)
+# print(listOne)
+listOne.remove(False)
+print(listOne)
+# print(listOne.pop())
 
