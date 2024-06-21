@@ -1,12 +1,12 @@
 # dictionary is like json for example
 students = {
     "Farzam": 100,
-    "Fahad": 500,
     "Faaz": 10,
+    "Fahad": 500,
 }
 
 # now to print
-print(students["Farzam"])
+# print(students["Farzam"])
 
 # Properties
 
@@ -16,3 +16,18 @@ print(students["Farzam"])
  • It is indexed (will not check every item)
  • Can't contain same key
 """
+
+# print("Keys",students.keys())
+# print("values",students.values())
+# print("items",students.items())
+
+# students["Fahad"] = 600 # to update perticular key
+# students.update({"Faaz": 600,"Rohan": 10}) # to update perticular key
+
+
+# print(students.get("Not Found")) # if not found then this will return none
+
+students.popitem() # will remove the last item from dictionary
+students.pop("Fazz") # will remove the past item from dictionary
+
+print(students)
