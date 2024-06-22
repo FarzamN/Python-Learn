@@ -56,3 +56,7 @@ words = {
 
 word = input("Enter a word: ")
 print(words.get(word, "Word not found in Words"))
+
+# 2) Write a program to input eight numbers from user and display the all unique numbers 
+
+# for i in range(8):
