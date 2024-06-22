@@ -1,3 +1,4 @@
+"""
 # 1) Write a program to store seven fruits in a list entered by user.
 
 fruits = []
@@ -40,3 +41,18 @@ print(sum(sumList))
 countTup = (7,0,8,0,0,9)
 counted= countTup.count(0)
 print(counted)
+
+"""
+
+# Dictionary and Sets Practice
+# 1) Write a program to create a dictionary of Hindi words with values as their English translation. Provide the user an option to look up the meaning of a word.
+
+words = {
+    "cat": "Billi",
+    "dog": "kutta",
+    "snake": "Sanp",
+    "Butcher": "Kasai"
+}
+
+word = input("Enter a word: ")
+print(words.get(word, "Word not found in Words"))
