@@ -92,4 +92,48 @@ for i in range(2):
 s = {1,2,3,4,"Farzam", [1,2]}
 print(type(s))
 
+# for and while loop Practice
+# 1) Write a program to print multiplication table of a given no. using for loop
+
+num = int(input("Enter a number: "))
+
+for i in range (1,11):
+    print(f"{num} x {i} = {num * i}")
+
+# 2) White a program to greet all the person names stored in a list and which starts with S
+listing = ["Harry", "Soham","Sachin","Rahul"]
+
+for i in listing:
+    if (i.startswith("S")):
+       print(f"Hello {i}")
+
+# 3) Write a program to print multiplication table of a given no. using while loop
+
+num = int(input("Enter a number: "))
+table = 1
+while (table <= 10):
+    print(f"{num} x {table} = {num * table}")
+    table += 1
+
+# 4) Write a program to find wheather a given number is prime or not
+
+num = int(input("Enter a number: "))
+
+for i in range(2, num):
+    if (num%i) == 0:
+        print("prime number")
+        break
+    else: 
+        print("false")
+        break
+
 """
+# 5) write a program to find the sum of first natural number
+num = int(input("Enter a number: "))
+i = 1
+sum = 0
+while (i<= num):
+    sum += i
+    i+=1
+
+print(sum)
