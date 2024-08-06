@@ -127,7 +127,6 @@ for i in range(2, num):
         print("false")
         break
 
-"""
 # 5) write a program to find the sum of first natural number
 num = int(input("Enter a number: "))
 i = 1
@@ -137,3 +136,62 @@ while (i<= num):
     i+=1
 
 print(sum)
+
+# Function and Recuration loop Practice
+
+# 1) write a program using function to find greatest of three numbers.
+
+def greatNum(a,b,c):
+    if(a > b and a>c):
+       return a
+    elif(b>c and b>a):
+        return b
+    elif(a>b and b> a):
+        return c
+    
+a = 1
+b = 23
+c =3    
+
+print(greatNum(50,100,c))
+
+# 2) write a python program using function to convert Celsius to Fahrenheit.
+
+def toFahrenheit(cel):
+    f = cel * (9/5) + 32
+    return f
+
+Celsius = 50
+print(toFahrenheit(Celsius))
+
+# 3) How do you prevent a python print() function to print a new line at the end.
+
+print("a")
+print("b")
+print("c", end="")
+print("d", end="")
+
+# 4) Write a recursive function to calculate the sum of first n natural numbers.
+
+def rec(n):
+    if( n ==1) :
+        return 1
+    return rec(n-1) + n
+
+
+print(rec(0))
+# 5) Write a python function to print first n lines of the following pattern:
+# ***
+# **
+# *            -for n=3
+
+def printStar(n):
+    if(n ==0):
+        return 
+    print("*" * n)
+    printStar(n-1)
+
+printStar(3)
+
+"""
+# 6) Write a python function to remove a given word from a list ad strip it at the same time
