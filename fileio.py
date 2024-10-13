@@ -1,0 +1,11 @@
+# f= open("file.txt")
+# data =f.read()
+# print(data)
+# f.close()
+f= open("text.txt", "w")
+f.write("Farzam Ki file")
+f.close()
+
+data = f.read()
+print(data)
+f.close()
