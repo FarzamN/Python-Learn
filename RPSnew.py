@@ -7,30 +7,23 @@
 import random
 
 while True:
-    computerChoise = random.choice(["r", "p", "s"])
+    choices = ["r", "p", "s"]
+    get_emoji = {"r": "🪨", "p": "📰", "s": "✂️"}
+    computerChoise = random.choice(choices)
     playerChoise = input("r/p/s: ").lower()
 
-    def get_emoji(choice):
-        if choice == "r":
-            return "🪨"
-        elif choice == "p":
-            return "📰"
-        elif choice == "s":
-            return "✂️"
-
-    # Display both choices with emojis
-    print(f"Computer chose: {get_emoji(computerChoise)}")
-    print(f"Player chose: {get_emoji(playerChoise)}")
-
-    if playerChoise not in ["r", "p", "s"]:
+    if playerChoise not in choices:
         print("Invalid choice, please choose 'r', 'p', or 's'.")
         continue
+
+    print(f"Player choose: {get_emoji[playerChoise]}")
+    print(f"Computer choose: {get_emoji[computerChoise]}")
     if computerChoise == playerChoise:
         print("It's a draw!")
     elif (
         (computerChoise == "r" and playerChoise == "p")
-        or (computerChoise == "p" and playerChoise == "S")
         or (computerChoise == "r" and playerChoise == "s")
+        or (computerChoise == "p" and playerChoise == "s")
     ):
         print("player won")
     else:
