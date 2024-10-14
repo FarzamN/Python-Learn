@@ -1,7 +1,3 @@
-"""
-get website url
-"""
-
 import qrcode
 
 url = input("Enter the website URL: ")
